@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10708502931dfd3468a5b9ca104ce0ad, type: 3}
+  m_Name: WireBlock
+  m_EditorClassIdentifier: 
+  Name: Wire
+  Prefab: {fileID: 6430313352104475713, guid: d7c85419ea973fc409dda741757b4df9, type: 3}
+  Type: 2

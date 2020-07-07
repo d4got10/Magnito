@@ -1,0 +1,2 @@
+Level_{id}_Stars_Amount - кол-во звёзд на уровне
+Level_{id}_Stars_{0, 1, 2} - bool переменные наличия звезд
