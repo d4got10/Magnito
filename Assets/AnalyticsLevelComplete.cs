@@ -23,5 +23,9 @@ public class AnalyticsLevelComplete : MonoBehaviour
         SecondStar = _starCollectioner.StarsCollected[1] ? 1 : 0;
         ThirdStar = _starCollectioner.StarsCollected[2] ? 1 : 0;
         _analyticsEventTracker.TriggerEvent();  
+        if(_starCollectioner.PreviousStarsAmount < _starCollectioner.CollectedStarsAmount)
+        {
+            Debug.Log("Event Triggered");
+        }
     }
 }

@@ -10,7 +10,7 @@ public class StarCollectioner : MonoBehaviour
 
     public bool[] StarsCollected { get; private set; }
     public int CollectedStarsAmount => (StarsCollected[0] ? 1 : 0) + (StarsCollected[1] ? 1 : 0) + (StarsCollected[2] ? 1 : 0);
-    public int PreviousStarsAmount => PlayerPrefs.GetInt($"Level_{LevelManager.CurrentLevelId}_Stars_Amount");
+    public int PreviousStarsAmount { get; private set; }
 
     public Action<int> OnStarCollected;
     public Action OnFinishedLevelEvent;
@@ -18,6 +18,16 @@ public class StarCollectioner : MonoBehaviour
     private void Awake()
     {
         StarsCollected = new bool[3];
+
+        if (PlayerPrefs.HasKey($"Level_{LevelManager.CurrentLevelId}_Stars_Amount"))
+        {
+            PreviousStarsAmount = PlayerPrefs.GetInt($"Level_{LevelManager.CurrentLevelId}_Stars_Amount");
+        }
+        else
+        {
+            PreviousStarsAmount = 0;
+        }
+
         _starsIndexes = new Dictionary<Star, int>();
         for (int i = 0; i < 3; i++)
         {
