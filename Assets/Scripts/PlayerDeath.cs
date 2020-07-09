@@ -45,10 +45,8 @@ public class PlayerDeath : MonoBehaviour, IDamageable
     {
         for(float t = 0.8f; t < 0.8f + time; t += Time.unscaledDeltaTime)
         {
-            Time.timeScale = Mathf.Clamp(1 / (t*t), 0.35f, 1);
             yield return null;
         }
-        Time.timeScale = 1;
         OnPlayerDeath?.Invoke();
     }
 }

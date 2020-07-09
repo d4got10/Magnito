@@ -1371,6 +1371,16 @@ PrefabInstance:
       objectReference: {fileID: 4522419150367659524}
     - target: {fileID: 8208557354922186234, guid: 8037ff7743b79c64fb8b5bb9f05fc16f,
         type: 3}
+      propertyPath: OnPlayerDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208557354922186234, guid: 8037ff7743b79c64fb8b5bb9f05fc16f,
+        type: 3}
+      propertyPath: OnPlayerDeathVisuals.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208557354922186234, guid: 8037ff7743b79c64fb8b5bb9f05fc16f,
+        type: 3}
       propertyPath: _objectsToDisable.Array.data[4]
       value: 
       objectReference: {fileID: 2377728240286750303}
@@ -1379,6 +1389,36 @@ PrefabInstance:
       propertyPath: OnPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7646854951018598878}
+    - target: {fileID: 8208557354922186234, guid: 8037ff7743b79c64fb8b5bb9f05fc16f,
+        type: 3}
+      propertyPath: OnPlayerDeathVisuals.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 7646854951018598878}
+    - target: {fileID: 8208557354922186234, guid: 8037ff7743b79c64fb8b5bb9f05fc16f,
+        type: 3}
+      propertyPath: OnPlayerDeathVisuals.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208557354922186234, guid: 8037ff7743b79c64fb8b5bb9f05fc16f,
+        type: 3}
+      propertyPath: OnPlayerDeathVisuals.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208557354922186234, guid: 8037ff7743b79c64fb8b5bb9f05fc16f,
+        type: 3}
+      propertyPath: OnPlayerDeathVisuals.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208557354922186234, guid: 8037ff7743b79c64fb8b5bb9f05fc16f,
+        type: 3}
+      propertyPath: OnPlayerDeathVisuals.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208557354922186234, guid: 8037ff7743b79c64fb8b5bb9f05fc16f,
+        type: 3}
+      propertyPath: OnPlayerDeathVisuals.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8037ff7743b79c64fb8b5bb9f05fc16f, type: 3}
 --- !u!114 &7646854950331549553 stripped
